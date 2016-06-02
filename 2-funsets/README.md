@@ -1,5 +1,6 @@
 ## Week 2 - Functional Sets
-
+### [Top](/README.md)
+### [Sources](/2-funsets/src/main/scala/funsets/FunSets.scala)
 * The goal of this week is to gain practice with **high-order functions**.
 
 * The solutions are in the ```src/main/scala/funsets/FunSets.scala```
