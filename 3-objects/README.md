@@ -1,5 +1,6 @@
 ## Week 3 - Object-Oriented Sets
-
+### [Top](/README.md)
+### [Sources](/2-objects/src/main/scala/objsets/TweetSet.scala)
 There is an abstract class ```TweetSet``` with two concrete subclasses, 
 ```Empty``` which represents an empty set, and ```NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet)``` which represents
 non-empty set.
