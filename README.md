@@ -1,6 +1,6 @@
 # Functional Programming Principles in Scala Assignments
 
-## [Week 1 - Recursion](1-recursion/README.md)
+## [Week 1 - Recursion](1-recursions/README.md)
 
 ## [Week 2 - Functional Sets](2-funsets/README.md)
 
