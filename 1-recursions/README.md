@@ -1,6 +1,6 @@
 ## Week 1 - Recursion
 ### [Top](/README.md)
-### [Sources](1-recursions/src/main/scala/recfun/Main.scala)
+### [Sources](/1-recursions/src/main/scala/recfun/Main.scala)
 All solutions are in the Main class(src/main/scala/recfun/Main.scala)
 
 ### Exercise 1: Pascal’s Triangle
