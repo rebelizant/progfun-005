@@ -34,5 +34,11 @@ Method ```union``` takes another set and computes a new set which is the union o
 def descendingByRetweet: TweetList
 ```
 
+Before implementing ```descendingByRetweet``` it is better to implement ```mostRetweeted``` method.
+```
+def mostRetweeted: Tweet
+```
+This method returns the most retweeted tweet from the set.
+
 4. Tying everything together
 
