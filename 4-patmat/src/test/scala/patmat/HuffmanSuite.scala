@@ -28,6 +28,11 @@ class HuffmanSuite extends FunSuite {
     }
   }
 
+  test("frequency of chars") {
+    assert(times(string2Chars("abcd")) === List(('a', 1), ('b', 1), ('c', 1), ('d', 1)))
+    assert(times(string2Chars("abacad")) === List(('a', 3), ('b', 1), ('c', 1), ('d', 1)))
+  }
+
 
   test("string2chars(\"hello, world\")") {
     assert(string2Chars("hello, world") === List('h', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd'))
@@ -44,10 +49,21 @@ class HuffmanSuite extends FunSuite {
     assert(combine(leaflist) === List(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3), Leaf('x',4)))
   }
 
+  test("println decoded secret") {
+    println(decodedSecret.mkString(""))
+  }
+
 
   test("decode and encode a very short text should be identity") {
     new TestTrees {
       assert(decode(t1, encode(t1)("ab".toList)) === "ab".toList)
+    }
+  }
+
+  test("convert code tree to a code table") {
+    new TestTrees {
+      assert(convert(t1) == List( ('a', List(0)), ('b', List(1)) ))
+      assert(convert(t2) == List(('a', List(0, 0)), ('b', List(0, 1)), ('d', List(1))))
     }
   }
 
